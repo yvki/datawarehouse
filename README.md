@@ -25,4 +25,6 @@ It consistsof 8 tables:
 
 ### Other Notes
 
-1. This project has no association to Classic Cars Pte Ltd in real life.
+1. Order of SQL: `Create > insert > Select`.
+
+2. This project has no association to Classic Cars Pte Ltd in real life.
