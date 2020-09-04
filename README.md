@@ -6,7 +6,7 @@ Classic Cars Pte Ltd is a retailer of toys specializing in scale car models. Cur
 
 ## Database Features
 
-It consistsof 8 tables: 
+It consists of 8 tables: 
 - Offices
 - Employees
 - Orders
@@ -17,11 +17,28 @@ It consistsof 8 tables:
 - Customers
 
 ## Project Setup
-1. Download the zipped files and open them in `Microsoft SQL Server`.
 
-2. Click on **Connect** and **right click on Databases** to create a **new schema** called `FairPrice`.
+### In Microsoft SQL Server,
 
-3. **Double click on** `CarSales` to make it the working database and run the SQL statements by clicking on **Execute**.
+1. Download the zipped files.
+
+2. Click on **Connect** and **right click on Databases** to create a **new schema** called `CarSalesOLTP` to represent the OLTP database.
+
+3. **Right click on Databases** again to create another **new schema** called `CarSalesDW` to represent the data warehouse.
+
+4. **Double click on** `CarSalesOLTP` to make it the working database and run the SQL statements by clicking on **Execute**.
+
+5. **Double click on** `CarSalesDW` to make it the working database and run the SQL statements by clicking on **Execute**.
+
+### Snowflake Schema
+
+Explanation for ```CarSalesDW.erd```:
+
+> The initial design was that of a star schema, however after encountering errors related to duplicated records in the customer and orders dimension tables, these two tables are identified as the ones that need to be **primary dimension tables that have secondary dimension tables** called CustomerPayment and OrderLine to insert data such as cheque payment and order line details respectively.
+
+> The **participation constraints between the CustomerDIM to CustomerPaymentDIM is optional** as not every customer owes the company payment. However, the **participation constraints between the OrderDIM to OrderLineDIM is compulsory** as every order will belong to a certain order line. The remaining 4 dimension tables are called Office, Employee, Product and Time and exist only as primary dimension tables.
+
+Although the **time taken to execute the SQL queries will be longer due to the use of more JOIN clauses**, a snowflake schema is still more suitable when building a data warehouse as it **prevent duplication errors in the long run**.
 
 ### Other Notes
 
