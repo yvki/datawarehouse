@@ -44,4 +44,4 @@ Although the **time taken to execute the SQL queries will be longer due to the u
 
 1. Order of SQL: `Create > insert > Select`.
 
-2. This project has no association to Classic Cars Pte Ltd in real life.
+2. This project has **no association to Classic Cars Pte Ltd in real life**.
