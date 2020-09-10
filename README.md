@@ -42,6 +42,8 @@ Although the **time taken to execute the SQL queries will be longer due to the u
 
 ### Other Notes
 
-1. Order of SQL: `Create > insert > Select`.
+1. Order of SQL: `Create > Insert > Select`.
 
-2. This project has **no association to Classic Cars Pte Ltd in real life**.
+2. For `Insert` to OLTP database, insert in the order: `Customers.csv > Assignment_INSERT_data_partial_OLTP.sql > Products.json` 
+
+3. This project has **no association to Classic Cars Pte Ltd in real life**.
