@@ -38,11 +38,9 @@ It consists of 8 tables:
 
 3. Click on **Workspace and right click again to create a new folder**. Attach the folder to the previously created cluster.
 
-4. For each command, click the "+" icon and run the SPARK SQL. 
-
 ### Snowflake Schema
 
-Explanation for ```CarSalesDW.erd```:
+Explanation for ```CarSalesDW.erd```: 
 
 > The initial design was that of a star schema, however after encountering errors related to duplicated records in the customer and orders dimension tables, these two tables are identified as the ones that need to be **primary dimension tables that have secondary dimension tables** called CustomerPayment and OrderLine to insert data such as cheque payment and order line details respectively.
 
