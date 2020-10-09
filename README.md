@@ -34,7 +34,7 @@ It consists of 8 tables:
 
 1. Download the zipped files.
 
-2. Click on **Clusters > Create New Cluster**. Give it a meaningful name and **select the default choice as the Databricks Runtime Version**. Wait for abotut 3 minutes for the cluster to connect with the server.
+2. Click on **Clusters > Create New Cluster**. Give it a meaningful name and **select the default choice as the Databricks Runtime Version**. Wait for about 3 minutes for the cluster to connect with the server.
 
 3. Click on **Workspace and right click again to create a new folder**. Attach the folder to the previously created cluster.
 
