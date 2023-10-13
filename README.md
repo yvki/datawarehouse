@@ -1,6 +1,3 @@
-# Project Background
-One of my modules for Year 2 is **Data Engineering (aka DENG)** where I had to **design 3 databases from scratch over 2 months** based on a given problem statement...
-
 ## Problem Statement
 Classic Cars Pte Ltd is a retailer of toys specializing in scale car models. Currently, they are using an **OLTP** system in their day-to-day operations and recently, the CEO has decided to setup a data warehouse for analysis purpose, and he wants you to **design a star/snowflake schema, setup the OLTP database and create a data warehouse that can generate meaningful insights in the areas of Sales, Staff/Offices, Seasons of Sales and Orders/Customer**.
 
